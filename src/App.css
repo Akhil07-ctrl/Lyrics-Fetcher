@@ -1,0 +1,228 @@
+/* App.css */
+
+/* Base styles for all devices */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  width: 88%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: rgba(0, 123, 255, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:disabled {
+  background: rgba(204, 204, 204, 0.8);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.loader {
+  margin-right: 10px;
+}
+
+.lyrics-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow-x: auto;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive styles for extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .lyrics-container {
+    padding: 15px;
+  }
+
+  pre {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive styles for small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  input[type="text"] {
+    width: 80%;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .lyrics-container {
+    padding: 20px;
+  }
+
+  pre {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive styles for medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"] {
+    width: 70%;
+  }
+
+  .button {
+    font-size: 1.1rem;
+    padding: 14px 28px;
+  }
+
+  .lyrics-container {
+    padding: 25px;
+  }
+
+  pre {
+    font-size: 1.1rem;
+  }
+}
+
+/* Responsive styles for large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  input[type="text"] {
+    width: 60%;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 16px 32px;
+  }
+
+  .lyrics-container {
+    padding: 30px;
+  }
+
+  pre {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive styles for extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  input[type="text"] {
+    width: 50%;
+  }
+
+  .button {
+    font-size: 1.3rem;
+    padding: 18px 36px;
+  }
+
+  .lyrics-container {
+    padding: 35px;
+  }
+
+  pre {
+    font-size: 1.3rem;
+  }
+}
